@@ -21,8 +21,8 @@ const displayProductDetails = (product) => {
     const detailsContainer = document.getElementById('details-container');
     detailsContainer.innerHTML = `
     <div class="card bg-base-100 w-full shadow-sm ">
-                <figure class="h-[400px] overflow-hidden">
-                    <img class="w-full h-full object-cover" 
+                <figure class="h-60 flex items-center justify-center bg-white">
+                    <img class="h-full object-contain" 
                         src="${product['image']}" 
                         alt="cloths" />
                 </figure>
