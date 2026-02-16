@@ -63,6 +63,7 @@
         </div>
     </header>
 
+    <!-- banner section -->
     <section class="banner ">
         <div class="md:w-3/4 md:mx-auto mx-4 py-44 space-y-5 ">
             <h1 class="text-4xl text-white font-bold">Best Collection For You</h1>
@@ -73,11 +74,12 @@
         </div>
     </section>
 
+    <!-- why chose us section -->
     <section class="bg-gray-50 py-20">
         <div class="md:w-3/4 md:mx-auto mx-4">
             <div class="text-center space-y-5">
                 <h1 class="text-4xl font-bold">Why Chose Us</h1>
-                <p class="text-gray-500 font-light text-xl">We provide the best shopping experience with top-notch
+                <p class="text-gray-600 font-light text-xl">We provide the best shopping experience with top-notch
                     services</p>
             </div>
             <div class="grid md:grid-cols-4 gap-5 pt-16">
@@ -85,32 +87,101 @@
                     <div class="card-body  space-y-2">
                         <i class="fa-regular fa-truck text-4xl text-primary"></i>
                         <h2 class="card-title">Fast Delivery</h2>
-                        <p>Get your orders delivered to your doorstep quickly and efficiently</p>
+                        <p class="text-gray-500 font-light">Get your orders delivered to your doorstep quickly and
+                            efficiently</p>
                     </div>
                 </div>
                 <div class="card bg-base-100 card-md shadow-sm">
                     <div class="card-body space-y-2">
                         <i class="fa-regular fa-headphones text-4xl text-primary"></i>
                         <h2 class="card-title">24/7 Support</h2>
-                        <p>Our support team is available around the clock to asist your</p>
+                        <p class="text-gray-500 font-light">Our support team is available around the clock to asist your
+                        </p>
                     </div>
                 </div>
                 <div class="card  bg-base-100 card-md shadow-sm">
                     <div class="card-body space-y-2">
                         <i class="fa-solid fa-shield text-4xl text-primary"></i>
                         <h2 class="card-title">Secure Payment</h2>
-                        <p>Experience safe and secure transactions with our encrypted payment system.</p>
+                        <p class="text-gray-500 font-light">Experience safe and secure transactions with our encrypted
+                            payment system.</p>
                     </div>
                 </div>
                 <div class="card  bg-base-100 card-md shadow-sm">
                     <div class="card-body space-y-2">
-                       <i class="fa-solid fa-right-left text-4xl text-primary"></i>
+                        <i class="fa-solid fa-right-left text-4xl text-primary"></i>
                         <h2 class="card-title">Easy Returns</h2>
-                        <p>Not satisfied? Return your products easily within 30 days.</p>
+                        <p class="text-gray-500 font-light">Not satisfied? Return your products easily within 30 days.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="md:w-3/4 md:mx-auto mx-4 py-20">
+        <h1 class="text-4xl font-bold">Trending Now</h1>
+        <div class="grid md:grid-cols-3 gap-4 my-10" id="trending-container">
+
+        </div>
+    </section>
+
+    <section class="bg-[#1E2A3A] text-white">
+        <footer class="grid md:grid-cols-4 footer text-base-content py-10 md:w-3/4 md:mx-auto mx-2">
+            <div>
+                <h2 class='font-bold text-4xl mb-5 text-primary'>SwiftCart</h2>
+                <p class='text-slate-300 mb-5 text-justify'>Your one stop shop for all your fashion and life style needs. Quality products,
+                    fast delivery and execllent supports  </p>
+                <img src={socialMedia} alt="" />
+            </div>
+            <nav>
+                <h6 class="footer-title text-white">Company</h6>
+                <a class="link link-hover text-gray-300">Home</a>
+                <a class="link link-hover text-gray-300">Products</a>
+                <a class="link link-hover text-gray-300">About</a>
+                <a class="link link-hover text-gray-300">Contacts</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title text-white">Support</h6>
+                <a class="link link-hover text-gray-300">FAQ</a>
+                <a class="link link-hover text-gray-300">Shipping</a>
+                <a class="link link-hover text-gray-300">Returns</a>
+                <a class="link link-hover text-gray-300">Privacy Policy</a>
+            </nav>
+            <form>
+                <h6 class="footer-title text-white">Subscribe to Our Newsletter</h6>
+                <fieldset class="w-80 space-y-3">
+                    <p class="text-gray-300">The latest news, articles and resources sent to your inbox weekly.</p>
+                    <div class="join">
+                        <input type="text" placeholder="Enter your email" class="input input-bordered join-item" />
+                        <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+        </footer>
+        <hr class="h-px bg-slate-700 border-0 w-11/12 mx-auto">
+        <footer class="footer sm:footer-horizontal text-neutral-content items-center py-10 md:w-3/4 md:mx-auto mx-2">
+            <aside class="grid-flow-col items-center">
+                <p class="text-gray-300"> © 2025 SwiftCart, Inc. All right reserved</p>
+            </aside>
+            <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <a>
+                   <i class="fa-brands fa-facebook-f text-gray-300 text-lg"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-twitter text-gray-300 text-lg"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-instagram text-gray-300 text-lg"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-linkedin-in text-gray-300 text-lg"></i>
+                </a>
+                <a>
+                    <i class="fa-regular fa-envelope text-gray-300 text-lg"></i>
+                </a>
+            </nav>
+        </footer>
     </section>
     <script src="./script/script.js"></script>
 </body>
