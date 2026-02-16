@@ -16,8 +16,8 @@ const displayTrendingProducts = (products) => {
         const cardDiv = document.createElement('div');
         cardDiv.innerHTML = `
         <div class="card bg-base-100 w-full shadow-sm h-[500px]">
-                <figure class="h-[400px] overflow-hidden">
-                    <img class="w-full h-full object-cover" 
+                <figure class="h-60 overflow-hidden">
+                    <img class="h-60 flex items-center justify-center bg-white" 
                         src="${products[i]['image']}" 
                         alt="cloths" />
                 </figure>
