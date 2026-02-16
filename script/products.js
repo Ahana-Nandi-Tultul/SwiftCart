@@ -43,8 +43,8 @@ const displayProducts = (products) => {
         const cardDiv = document.createElement('div');
         cardDiv.innerHTML = `
         <div class="card bg-base-100 w-full shadow-sm h-[500px]">
-                <figure class="h-60 overflow-hidden">
-                    <img class="h-60 flex items-center justify-center bg-white" 
+                <figure class="h-60 flex items-center justify-center bg-white">
+                    <img class="h-full object-contain" 
                         src="${product['image']}" 
                         alt="cloths" />
                 </figure>
