@@ -20,7 +20,7 @@ const loadProductDetails = async(id) => {
 const displayProductDetails = (product) => {
     const detailsContainer = document.getElementById('details-container');
     detailsContainer.innerHTML = `
-    <div class="card bg-base-100 w-full shadow-sm h-[500px]">
+    <div class="card bg-base-100 w-full shadow-sm ">
                 <figure class="h-[400px] overflow-hidden">
                     <img class="w-full h-full object-cover" 
                         src="${product['image']}" 
@@ -34,6 +34,8 @@ const displayProductDetails = (product) => {
                     <h2 class="text-xl font-medium">${product['title']}</h2>
                     <h2 class="text-2xl font-bold">$${product['price']}</h2>
                     <p>${product['description']}</p>
+                    <button class="btn btn-primary rounded-xl"><i class="fa-solid fa-cart-shopping"></i><span>Add</span></button>
+
                 </div>
             </div>
     `
