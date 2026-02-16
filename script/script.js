@@ -1,3 +1,16 @@
+const currentPage = window.location.pathname.split("/").pop();
+
+const navLinks = document.querySelectorAll(".menu a");
+
+navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+        link.classList.add("text-primary", "font-semibold");
+    }
+});
+
+
 const loadTrendingProducts = async() =>{
     const res = await fetch("https://fakestoreapi.com/products");
     const json = await res.json();
@@ -36,4 +49,6 @@ const displayTrendingProducts = (products) => {
         trendingContainer.append(cardDiv);
     }
 }
+
 loadTrendingProducts();
+
